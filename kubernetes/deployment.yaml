@@ -1,21 +1,24 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: spring-boot-hello
+  namespace: springboot
   labels:
-    app: nginx
+    app: spring-boot-hello
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: spring-boot-hello
   template:
     metadata:
       labels:
-        app: nginx
+        app: spring-boot-hello
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: springboot-container
+        image: abhichintu/spring-image:latest
+        imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 8080
