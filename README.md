@@ -39,6 +39,7 @@ fluxctl install \
 kubectl get deploy -n springboot
 
 **Edit Deployment file**
+
 kubectl edit deploy flux -n springboot
 
 Add "--sync-garbage-collection"
