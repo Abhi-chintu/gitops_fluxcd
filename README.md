@@ -10,7 +10,6 @@ FluxCTL
 Install fluxCTL:
 ---------------
     curl -L https://github.com/fluxcd/flux/releases/latest/download/fluxctl_linux_amd64 -o fluxctl 
-    mv fluxctl_linux_amd64 fluxctl
     chmod +x fluxctl
     mv fluxctl /usr/bin/
     fluxctl version
