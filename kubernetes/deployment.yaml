@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: springboot-container
-        image: abhichintu/springboot-image
+        image: abhichintu/springboot-image:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
